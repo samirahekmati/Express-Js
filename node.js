@@ -3,6 +3,7 @@ const http = require ('http');
 const server = http.createServer((req, res)=>{
 
 // res =  our way of responding to the requester
+
 // http message : 1.start(check) line 2.header 3.body
 // writeHeade method takes two args: 1.status code 2.object for the mime-type
 //HTTP Status Codes:Three-digit codes that indicate the outcome of a request, such as "200 OK" or "404 Not Found"
