@@ -1,0 +1,40 @@
+**`app` object has some methods: they are called http verbs or REST verbs!**
+
+1. Get - READ -Default to all browsers is Get
+2. post - CREATE
+3. Delete - DELETE
+4. Put - UPDATE
+
+All the methods take 2 args: 1. path ('/') 2. a callback
+
+The Routing system in express is meant to handle two things: 1.the type of http request 2. the path that you actually want to fetch
+
+
+
+
+
+# **Use method**
+**Express middleware**
+
+Express middleware is a function or a set of functions that are executed during the request-response cycle in an Express.js application. It can modify the request object (req), the response object (res), or end the request-response cycle entirely.
+
+Middleware functions are typically used for tasks such as:
+
+**Logging requests.
+
+Parsing request bodies (e.g., JSON, form data).
+
+Authentication and authorization.
+
+Error handling.
+
+Serving static files.
+
+Modifying headers or cookies.**
+
+
+# express.static(root, [options])
+
+This is a built-in middleware function in Express. It serves static files and is based on serve-static.
+
+The root argument specifies the root directory from which to serve static assets. The function determines the file to serve by combining req.url with the provided root directory. When a file is not found, instead of sending a 404 response, it calls next() to move on to the next middleware, allowing for stacking and fall-backs.
